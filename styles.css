@@ -1,30 +1,44 @@
-section {
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
     height: 100vh;
-    background-color: antiquewhite;
-    border: solid white 0.5px;
-    margin: 0;
-}
-
-body {
-    margin: 0;
-}
-
-.smallname {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 12px;
-    font-size: 24px;
-    font-family: 'Archivo Narrow', serif;
-}
-
-.hello {
     background-image: url('/img/img.jpg');
-    min-height: 100%;
     background-position: center;
     background-size: cover;
 }
 
-.contact {
-    height: 40vh;
+.smallname {
+    font-size: 24px;
+    font-family: 'Archivo Narrow', serif;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    position: absolute;
+}
+
+.navpane {
+    background: white;
+    width: 20%;
+    height: 100%;
+    opacity: 0.75;
+    float:left;
+}
+
+.container {
+    float: right;
+    background: white;
+    opacity: 0.5;
+    width: 65%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.center{
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 60%;
 }
