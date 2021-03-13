@@ -56,3 +56,9 @@ html, body{
     top: 50%;
     left: 10%;
 }
+
+a:hover {
+    cursor:pointer;
+    color: sienna;
+    background-color: wheat;
+}
