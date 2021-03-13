@@ -59,14 +59,37 @@ html, body{
     left: 10%;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 25%;
+    padding: 25px;
+}
+
+.project {
+    float: right;
+    background: gray;
+    opacity: 0.5;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+}
+
 a:hover {
     cursor:pointer;
     color: sienna;
     background-color: wheat;
 }
 
+.project:hover {
+    opacity: 1;
+}
+
 #github {
-    width: 10%;
+    width: 26px;
     float:right;
     margin-right: 9%;
     margin-top: 6%;
@@ -82,4 +105,10 @@ a:hover {
 
 #email:hover{
     background-color: white;
+}
+
+@media (max-width: 915px) {                  
+    #github, #email {
+       display: none;
+    }
 }
