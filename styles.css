@@ -4,6 +4,10 @@ html, body{
     font-family: "Chivo";
 }
 
+p {
+    margin-left: -100%;
+}
+
 .background{
     height: 100vh;
     background: antiquewhite;
@@ -102,7 +106,7 @@ a:hover {
     float:right;
     margin-right: 9%;
     margin-top: 4%;
-    font-size: 31px;
+    font-size: 30px;
 }
 
 #email:hover{
