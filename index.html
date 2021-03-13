@@ -14,17 +14,20 @@
     <div class="navpane">
       <div class="smallname">sahuashi</div>
       <ul class="vertically-center">
-        <p class="first">home</p>
-        <p>about</p>
-        <p>projects</p>
-        <p>contact</p>
+        <p class="first"><button onclick="showItem('hello')">home</button></p>
+        <p><button onclick="showItem('about')">about</button></p>
+        <p><button onclick="showItem('projects')">projects</button></p>
+        <p><button onclick="showItem('contact')">contact</button></p>
       </ul>
       <img class="icon" />
     </div>
     <div class="container absolute-center">
-      <div class="item">
+      <div class="item" id="hello">
         hi! 👋
       </div>
+      <div class="item" id="about" hidden>about me!</div>
+      <div class="item" id="projects" hidden>projects!</div>
+      <div class="item" id="contact" hidden>get in contact!</div>
     </div>
   </div>
   <script src="script.js"></script>
