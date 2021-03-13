@@ -5,9 +5,10 @@ html, body{
 
 .background{
     height: 100vh;
-    background-image: url('/img/img.jpg');
+    background: antiquewhite;
+    /*background-image: url('/img/img.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .smallname {
@@ -24,7 +25,7 @@ html, body{
     width: 20%;
     height: 100%;
     opacity: 0.75;
-    float:left;
+    display: inline-block;
 }
 
 .container {
@@ -36,9 +37,22 @@ html, body{
     border-radius: 25px;
 }
 
-.center{
-    position: absolute;
+.absolute-center, .item{
     transform: translateX(-50%) translateY(-50%);
+    position: absolute;
     top: 50%;
     left: 60%;
+}
+
+.item {
+    font-size: 24px;
+    left: 50% !important
+}
+
+.vertically-center{
+    transform: translateY(-50%);
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 10%;
 }
