@@ -32,11 +32,24 @@
       <div class="item" id="about" hidden>about me!</div>
       <div class="item" id="projects" hidden>
         <div class="row">
-          <div class="col project">SixteenAte</div>
-          <div class="col project">Novelle</div>
-          <div class="col project">Straight Up</div>
-          <div class="col project">TaxMe</div>
+          <a onclick="showProjectProfile('sixteenate')" class="col project">SixteenAte</a>
+          <a onclick="showProjectProfile('novelle')" class="col project">Novelle</a>
+          <a onclick="showProjectProfile('straightup')" class="col project">Straight Up</a>
+          <a onclick="showProjectProfile('taxme')" class="col project">TaxMe</a>
         </div>
+        <div class="profile" id="sixteenate" hidden>
+          <button onclick="goBack()">x</button>
+          hi this is sixteenate
+        </div>
+        <div class="profile" id="novelle" hidden>
+          <button onclick="goBack()">x</button>
+          hi this is novelle</div>
+        <div class="profile" id="straightup" hidden>
+          <button onclick="goBack()">x</button>
+          hi this is straight up</div>
+        <div class="profile" id="taxme" hidden>
+          <button onclick="goBack()">x</button>
+          hi this is taxme</div>
       </div>
       <div class="item" id="contact" hidden>get in contact!</div>
     </div>
