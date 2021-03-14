@@ -83,6 +83,10 @@ p {
     max-height: 30px;
 }
 
+.return {
+    size: 5%;
+}
+
 a:hover {
     cursor:pointer;
     color: sienna;

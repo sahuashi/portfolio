@@ -17,6 +17,7 @@ function showProjectProfile(id){
 
 function hideProjects(boolean) {
     [...document.getElementsByClassName("project")].forEach(element => element.hidden = boolean);
+    document.getElementById("return").hidden = !boolean;
 }
 
 function goBack(){
