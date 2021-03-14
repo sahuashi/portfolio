@@ -1,6 +1,15 @@
 function showItem(id){
     reset();
     document.getElementById(id).hidden = false;
+    if(document.getElementById("projects").hidden) {
+        document.getElementById("return").hidden = true;
+    }
+    else {
+        var arr = [...document.getElementsByClassName("profile")];
+        if (arr.some(e => e.hidden === false)) {
+            document.getElementById("return").hidden = false;
+        }
+    }
 }
 
 function reset(){
