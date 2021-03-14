@@ -83,8 +83,8 @@ p {
     max-height: 30px;
 }
 
-.return {
-    size: 5%;
+.profile {
+    text-align: center;
 }
 
 a:hover {
@@ -96,6 +96,14 @@ a:hover {
 .project:hover {
     opacity: 1;
     flex-grow: 3;
+}
+
+#email:hover {
+    background-color: transparent;
+}
+
+#return:hover {
+    background-color: transparent;
 }
 
 #github {
@@ -113,8 +121,11 @@ a:hover {
     font-size: 30px;
 }
 
-#email:hover{
-    background-color: white;
+#return {
+    top: 50%;
+    font-size: 50px;
+    margin-left: 3%;
+    line-height: 75px;
 }
 
 @media (max-width: 915px) {                  
