@@ -4,10 +4,6 @@ html, body{
     font-family: "Chivo";
 }
 
-p {
-    margin-left: -100%;
-}
-
 .background{
     height: 100vh;
     background: antiquewhite;
@@ -32,6 +28,10 @@ p {
     height: 100%;
     opacity: 0.75;
     display: inline-block;
+}
+
+.navpane p {
+    margin-left: -100%;
 }
 
 .container {
@@ -88,14 +88,29 @@ p {
     text-align: center;
 }
 
-.profile h5 {
+.profile h3 {
     color: brown;
+    display: inline;
+    white-space: nowrap; 
 }
 
 .profile a {
     text-decoration: none;
-    font-size: 80%;
     color: black;
+}
+
+.profile p {
+    font-size: 80%;
+    line-height: 20px;
+}
+
+.tool {
+    font-size: 70%;
+    background: burlywood;
+    display:inline-flex;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 3px 0.5px 3px 0.5px;
 }
 
 a:hover {
