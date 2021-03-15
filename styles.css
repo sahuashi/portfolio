@@ -4,6 +4,22 @@ html, body{
     font-family: "Chivo";
 }
 
+label {
+    display: block;
+    font-size: 65%;
+    margin-top: 5px;
+}
+
+input {
+    margin: 5px 0px 5px 0px;
+}
+
+h3 {
+    color: brown;
+    display: inline;
+    white-space: nowrap; 
+}
+
 .background{
     height: 100vh;
     background: antiquewhite;
@@ -55,7 +71,8 @@ html, body{
 
 .item {
     font-size: 24px;
-    left: 50% !important
+    left: 50% !important;
+    text-align: center;
 }
 
 .vertically-center{
@@ -90,17 +107,10 @@ html, body{
     border-radius: 10px;
     margin: 5px 5px 5px 5px;
     text-align: center;
-    max-height: 30px;
 }
 
 .profile {
     text-align: center;
-}
-
-.profile h3 {
-    color: brown;
-    display: inline;
-    white-space: nowrap; 
 }
 
 .profile a {
@@ -165,6 +175,16 @@ a:hover {
     font-size: 50px;
     margin-left: 3%;
     line-height: 75px;
+}
+
+#message {
+    min-width: 82%;
+    max-width: 784px;
+    max-height: 306px;
+}
+
+#submit {
+    display: inline-block;
 }
 
 @media (max-width: 915px) {                  

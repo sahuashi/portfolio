@@ -33,3 +33,15 @@ function goBack(){
     [...document.getElementsByClassName("profile")].forEach(element => element.hidden = true);
     hideProjects(false);
 }
+
+const contactform = document.getElementById('contactform').addEventListener('submit', function (event) {
+    event.preventDefault();
+    emailjs.init(config);
+    emailjs.sendForm('contact', 'contact', this)
+        .then(function () {
+            console.log('message sent!');
+        }, function (error) {
+            console.log('error: ', error);
+        });
+});
+
