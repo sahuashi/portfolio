@@ -39,7 +39,8 @@ const contactform = document.getElementById('contactform').addEventListener('sub
     emailjs.init(config);
     emailjs.sendForm('contact', 'contact', this)
         .then(function () {
-            console.log('message sent!');
+            alert("Message sent!");
+            [...document.forms].forEach(element => element.reset());
         }, function (error) {
             console.log('error: ', error);
         });

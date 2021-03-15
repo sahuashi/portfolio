@@ -177,14 +177,20 @@ a:hover {
     line-height: 75px;
 }
 
-#message {
-    min-width: 82%;
+textarea {
+    min-width: 85%;
     max-width: 784px;
     max-height: 306px;
 }
 
-#submit {
+input[type=submit]{
     display: inline-block;
+    padding: 7px;
+    background-color: rosybrown;
+    border-radius: 20px;
+    color:white;
+    border: none;
+    font-size: 13px;
 }
 
 @media (max-width: 915px) {                  
