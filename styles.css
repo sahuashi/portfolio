@@ -45,7 +45,9 @@ html, body{
 }
 
 .absolute-center, .item{
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     position: absolute;
     top: 50%;
     left: 60%;
@@ -57,7 +59,9 @@ html, body{
 }
 
 .vertically-center{
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     position: absolute;
     margin: 0;
     top: 50%;
@@ -65,12 +69,17 @@ html, body{
 }
 
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .col {
-    flex: 25%;
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
     padding: 20px;
 }
 
@@ -107,6 +116,8 @@ html, body{
 .tool {
     font-size: 70%;
     background: burlywood;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
     display:inline-flex;
     padding: 10px;
     border-radius: 25px;
@@ -121,7 +132,9 @@ a:hover {
 
 .project:hover {
     opacity: 1;
-    flex-grow: 3;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
 }
 
 #email:hover {
