@@ -55,9 +55,8 @@ input[type=submit]{
     font-family: 'Archivo Narrow', serif;
     left: 0;
     top: 0;
-    padding: 12px;
+    padding: 10px;
     position: absolute;
-    line-height: 30px;
 }
 
 .navpane {
@@ -208,10 +207,10 @@ a:hover {
 }
 
 #github {
-    width: 26px;
+    width: 10%;
     float:right;
     margin-right: 9%;
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 #email {
@@ -220,6 +219,7 @@ a:hover {
     margin-right: 9%;
     margin-top: 4%;
     font-size: 30px;
+    text-decoration: none;
 }
 
 #return {
