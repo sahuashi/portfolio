@@ -26,13 +26,31 @@
         <p><a onclick="showItem('contact')">contact</a></p>
       </ul>
       <img class="icon" />
+      <div class="footer">designed and built by sahuashi</div>
     </div>
     <div class="container absolute-center">
       <a id="return" onclick="goBack()" hidden>&#8249;</a>
       <div class="item" id="hello">
-        hi! 👋
+        <div class="circle">
+          <p>👋 Hi, I'm Ayushi!<br/>I like making things,<br/>big and small.</p>
+          <img id="cat" src="img/cat.svg" alt="floating cat">
+        </div>
       </div>
-      <div class="item" id="about" hidden>about me!</div>
+      <div class="item" id="about" hidden>
+        <h3>About Me</h3>
+        <p>My name is Ayushi and I'm a student, developer and artist with a passion for creativity.</p>
+        <p>When I'm not creating, you can find me learning, traveling or trying out a new local coffee spot.</p>
+        <h5>Skills</h5><br/>
+        <div class="tool">JavaScript</div>
+        <div class="tool">Git</div>
+        <div class="tool">C#</div>
+        <div class="tool">Python</div>
+        <div class="tool">Java</div>
+        <div class="tool">SQL</div>
+        <div class="tool">HTML/CSS</div>
+        <div class="tool">React</div>
+        <div class="tool">Node.js</div>
+      </div>
       <div class="item" id="projects" hidden>
         <div class="row">
           <a onclick="showProjectProfile('sixteenate')" class="col project">SixteenAte</a>
@@ -41,31 +59,38 @@
           <a onclick="showProjectProfile('taxme')" class="col project">TaxMe</a>
         </div>
         <div class="profile" id="sixteenate" hidden>
+          <img class="logo" src="img/sixteenate.png">
           <h3>SixteenAte: Intermittent Fasting Tracker</h3>
-          <p>Web App</p>
+          <p class="type">Web App</p>
+          <p>A full-stack web application that allows users to add, track and manage their fasts.</p>
           <div class="tool">JavaScript</div>
           <div class="tool">React</div>
-          <div class="tool">Node.js</div>
-          <div class="tool">Express.js</div><br/>
+          <div class="tool">Node.js</div><br/>
+          <div class="tool">Express.js</div>
           <div class="tool">MongoDB</div>
           <div class="tool">Bootstrap</div>
           <p><a href="https://sixteenate.herokuapp.com">Live Demo</a> ✨ <a
               href="https://www.github.com/sahuashi/if-tracker">Source Code</a></p>
         </div>
         <div class="profile" id="novelle" hidden>
-          <h3>Novelle</h3>
-          <p>Web App</p>
+          <img class="logo" src="img/novelle.png">
+          <br/><h3>Novelle: Book Finder</h3>
+          <p class="type">Web App</p>
+          <p>A web application that allows users to search for books and save them to a reading list.</p>
           <div class="tool">Python</div>
           <div class="tool">Flask</div>
           <div class="tool">HTML/CSS</div><br/>
           <div class="tool">SQLite</div>
+          <div class="tool">Bootstrap</div>
           <div class="tool">Google Books API</div>
           <p><a href="https://novelle.herokuapp.com/search">Live Demo</a> ✨ <a
               href="https://github.com/sahuashi/novelle">Source Code</a></p>
         </div>
         <div class="profile" id="straightup" hidden>
+          <img class="logo" src="img/straightup.png">
           <h3>Straight Up: Posture Reminder</h3>
-          <p>Google Chrome Extension</p>
+          <p class="type">Google Chrome Extension</p>
+          <p>A browser extension that allows users to set recurring reminders to fix their posture.</p>
           <div class="tool">JavaScript</div>
           <div class="tool">HTML/CSS</div>
           <div class="tool">Google Alarms API</div>
@@ -73,7 +98,8 @@
         </div>
         <div class="profile" id="taxme" hidden>
           <h3>TaxMe</h3>
-          <p>Desktop App (Windows)</p>
+          <p class="type">Desktop App (Windows)</p>
+          <p>A Windows application that allows users to experiment with the taxation process on historical data.</p>
           <div class="tool">C#</div>
           <div class="tool">.NET</div>
           <div class="tool">WPF</div>
@@ -85,12 +111,12 @@
         <h3>Get in touch!</h3>
         <form id="contactform">
           <label for="name">Name:</label>
-          <input name="name" type=text placeholder="Your name..."/>
+          <input name="name" type=text placeholder="Your name..." />
           <label for="email">Email:</label>
-          <input name="email" type=email placeholder="Your email..." required/>
+          <input name="email" type=email placeholder="Your email..." required />
           <label for="message">Message: </label>
-          <textarea name="message" cols="30" rows="10" placeholder="Enter your message..." required></textarea>
-          <input type="submit"/>
+          <textarea name="message" cols="50" rows="10" placeholder="Enter your message..." required></textarea>
+          <input type="submit" />
         </form>
       </div>
     </div>

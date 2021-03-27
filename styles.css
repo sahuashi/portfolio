@@ -2,22 +2,44 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: "Chivo";
+    text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: subpixel-antialiased;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 label {
     display: block;
     font-size: 65%;
-    margin-top: 5px;
+    margin-top: 13px;
 }
 
 input {
     margin: 5px 0px 5px 0px;
+    font-size: 15px;
 }
 
-h3 {
+h3, h5 {
     color: brown;
     display: inline;
     white-space: nowrap; 
+}
+
+textarea {
+    font-size: 15px;
+    min-width: 85%;
+    max-width: 784px;
+    max-height: 306px;
+}
+
+input[type=submit]{
+    display: inline-block;
+    padding: 7px;
+    background-color: rosybrown;
+    border-radius: 20px;
+    color:white;
+    border: none;
+    font-size: 13px;
 }
 
 .background{
@@ -102,7 +124,8 @@ h3 {
 
 .project {
     float: right;
-    background: gray;
+    background: #B37B56;
+    color: wheat;
     opacity: 0.5;
     border-radius: 10px;
     margin: 5px 5px 5px 5px;
@@ -132,6 +155,35 @@ h3 {
     padding: 10px;
     border-radius: 25px;
     margin: 3px 0.5px 3px 0.5px;
+}
+
+.circle {
+    height: 300px;
+    width:300px;
+    border-radius: 100%;
+    padding: 18px;
+    display: flex;
+    color: white;
+    background: linear-gradient(to bottom right, #EDE0D4, #E6CCB2, #DDB892, #CCA074, #B37B56);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-left:2.75%;
+    font-size: 80%;
+    font-size: 1vw;
+    opacity: 0.75;
+}
+
+.type {
+    color: sienna;
 }
 
 a:hover {
@@ -177,24 +229,30 @@ a:hover {
     line-height: 75px;
 }
 
-textarea {
-    min-width: 85%;
-    max-width: 784px;
-    max-height: 306px;
+#cat {
+    width: 23%; 
+    filter: invert(90%);
+    position:absolute;
+    top:65%;
+    left:38%;
+    animation-name: float;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 
-input[type=submit]{
-    display: inline-block;
-    padding: 7px;
-    background-color: rosybrown;
-    border-radius: 20px;
-    color:white;
-    border: none;
-    font-size: 13px;
+#about p{
+    font-size: 75%;
 }
 
 @media (max-width: 915px) {                  
     #github, #email {
        display: none;
     }
+}
+
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
