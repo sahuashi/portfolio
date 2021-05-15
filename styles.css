@@ -51,10 +51,9 @@ input[type=submit]{
 }
 
 .smallname {
-    font-size: 24px;
-    font-family: 'Archivo Narrow', serif;
+    width: 80px;
     left: 0;
-    top: 0;
+    top: 1%;
     padding: 10px;
     position: absolute;
 }
@@ -178,7 +177,7 @@ input[type=submit]{
     margin-left:2.75%;
     font-size: 80%;
     font-size: 1vw;
-    opacity: 0.75;
+    opacity: 0.3;
 }
 
 .type {
@@ -207,19 +206,17 @@ a:hover {
 }
 
 #github {
-    width: 10%;
+    width: 9%;
     float:right;
-    margin-right: 9%;
-    margin-top: 5%;
+    margin-right: 5%;
+    margin-top: 6%;
 }
 
 #email {
     width: 10%;
-    float:right;
-    margin-right: 9%;
-    margin-top: 4%;
-    font-size: 30px;
-    text-decoration: none;
+    float: right;
+    margin-right: 5%;
+    margin-top: 6%;
 }
 
 #return {
