@@ -51,7 +51,7 @@ input[type=submit]{
 }
 
 .smallname {
-    width: 80px;
+    width: 6%;
     left: 0;
     top: 1%;
     padding: 10px;
@@ -243,8 +243,15 @@ a:hover {
 }
 
 @media (max-width: 915px) {                  
-    #github, #email {
+    #github, #email, .smallname {
        display: none;
+    }
+}
+
+@media (max-width: 414px) {                  
+    .navpane p{
+        font-size: 13px;
+        margin-left: -125%;
     }
 }
 

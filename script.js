@@ -1,7 +1,7 @@
-function showItem(id){
+function showItem(id) {
     reset();
     document.getElementById(id).hidden = false;
-    if(document.getElementById("projects").hidden) {
+    if (document.getElementById("projects").hidden) {
         document.getElementById("return").hidden = true;
     }
     else {
@@ -12,16 +12,16 @@ function showItem(id){
     }
 }
 
-function reset(){
+function reset() {
     document.getElementById("hello").hidden = true;
     document.getElementById("about").hidden = true;
     document.getElementById("projects").hidden = true;
     document.getElementById("contact").hidden = true;
 }
 
-function showProjectProfile(id){
+function showProjectProfile(id) {
     hideProjects(true);
-    document.getElementById(id).hidden=false;
+    document.getElementById(id).hidden = false;
 }
 
 function hideProjects(boolean) {
@@ -29,7 +29,7 @@ function hideProjects(boolean) {
     document.getElementById("return").hidden = !boolean;
 }
 
-function goBack(){
+function goBack() {
     [...document.getElementsByClassName("profile")].forEach(element => element.hidden = true);
     hideProjects(false);
 }
