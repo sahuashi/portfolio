@@ -55,7 +55,7 @@ html, body{
     padding: 25px;
 }
 
-h3, h4 {
+h3, h4, h5 {
     font-weight: lighter;
     margin: 0;
 }
@@ -98,6 +98,7 @@ h3, h4 {
     padding: 0;
 }
 
-#projects blockquote a {
-    color:rgb(163, 156, 142)
+#projects blockquote a, #projects blockquote h4{
+    color:rgb(163, 156, 142);
+    text-decoration: none;
 }
