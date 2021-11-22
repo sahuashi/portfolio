@@ -37,7 +37,7 @@ html, body{
 }
 
 /* content styling */
-.info, #intro, #about, .skills ul, .skills li {
+.info, #intro, #about, .skills li, #projects {
     padding: 10px;
 }
 
@@ -50,6 +50,7 @@ h3, h4 {
     max-width: 43rem;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
 }
 
 #intro {
@@ -59,6 +60,7 @@ h3, h4 {
 /* skills list */
 .skills ul {
     margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
