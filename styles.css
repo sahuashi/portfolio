@@ -8,8 +8,8 @@ html, body{
 /* header and footer base */
 .navbar {
     padding: 30px;
-    background: rgba(250, 249, 249, 0.74);
-    color: black;
+    background: #f0ece627;;
+    color: rgb(163, 156, 142);
 }
 
 .navbar ul {
@@ -28,7 +28,7 @@ html, body{
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: rgb(163, 156, 142);
     float: right;
     margin-left: 25px;
 }
@@ -43,6 +43,11 @@ html, body{
 .moon {
     margin-top: -5px;
     font-size: larger;
+}
+
+.name {
+    width: 100px;
+    margin: -10px -10px;
 }
 
 /* content styling */
@@ -76,7 +81,7 @@ h3, h4 {
 
 .skills li {
     display: inline;
-    background: rgba(216, 230, 228, 0.425);
+    background: #d6c29d33;
     display:-webkit-inline-box;
     display:-ms-inline-flexbox;
     border-radius: 25px;
