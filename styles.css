@@ -90,3 +90,14 @@ h3, h4 {
     padding: 10px;
     margin: 5px 2px;
 }
+
+/* projects list */
+#projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projects blockquote a {
+    color:rgb(163, 156, 142)
+}
