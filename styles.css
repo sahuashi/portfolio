@@ -3,6 +3,7 @@ html, body{
     padding: 0;
     text-align: center;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    scroll-behavior: smooth; 
 }
 
 /* header and footer base */
@@ -25,6 +26,7 @@ html, body{
 
 .navbar a {
     text-decoration: none;
+    color: black;
 }
 
 /* header styling */
@@ -35,11 +37,26 @@ html, body{
 }
 
 /* content styling */
-.info {
-    padding: 15px;
+.info, #intro, #about, .skills ul, .skills li {
+    padding: 10px;
 }
 
 #intro {
-    font-weight: bold;
-    padding: 5px;
+    font-size: larger;
+}
+
+/* skills list */
+.skills ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.skills li {
+    display: inline;
+    background: rgba(216, 230, 228, 0.425);
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    border-radius: 25px;
+    font-weight: lighter;
+    font-size: small;
 }
