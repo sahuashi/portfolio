@@ -4,3 +4,44 @@ html, body{
     text-align: center;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
+
+/* header styling */
+.header {
+    padding: 30px;
+    background: rgba(250, 249, 249, 0.74);
+    color: black;
+    position: sticky; 
+    position: -webkit-sticky; /* safari compatibility */
+    top: 0;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header li {
+    display: inline;
+    padding: 15px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+}
+
+/* content styling */
+.info {
+    padding: 15px;
+}
+
+#intro {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* footer styling */
