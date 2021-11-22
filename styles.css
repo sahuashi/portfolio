@@ -41,6 +41,17 @@ html, body{
     padding: 10px;
 }
 
+h3, h4 {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.info {
+    max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #intro {
     font-size: larger;
 }
