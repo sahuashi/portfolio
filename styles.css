@@ -1,7 +1,6 @@
 html, body{
     margin: 0;
     padding: 0;
-    text-align: center;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     scroll-behavior: smooth; 
 }
@@ -17,6 +16,9 @@ html, body{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar li {
@@ -27,6 +29,8 @@ html, body{
 .navbar a {
     text-decoration: none;
     color: black;
+    float: right;
+    margin-left: 25px;
 }
 
 /* header styling */
@@ -34,6 +38,11 @@ html, body{
     position: sticky; 
     position: -webkit-sticky; /* safari compatibility */
     top: 0;
+}
+
+.moon {
+    margin-top: -5px;
+    font-size: larger;
 }
 
 /* content styling */
