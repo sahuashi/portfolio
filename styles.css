@@ -26,7 +26,7 @@ html, body{
     padding: 15px;
 }
 
-.navbar a {
+.navbar a, button {
     text-decoration: none;
     color: rgb(163, 156, 142);
     float: right;
@@ -40,12 +40,15 @@ html, body{
     top: 0;
 }
 
-.moon {
+#moon {
     margin-top: -5px;
     font-size: larger;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
-.name {
+#name {
     width: 100px;
     margin: -10px -10px;
 }
@@ -108,3 +111,14 @@ h3, h4, h5 {
        display: none;
     }
  }
+
+ /* dark/light mode styling */
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
