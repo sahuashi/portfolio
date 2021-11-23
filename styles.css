@@ -102,3 +102,9 @@ h3, h4, h5 {
     color:rgb(163, 156, 142);
     text-decoration: none;
 }
+
+@media (max-width: 465px) {                  
+    #github, #email, #source, #top {
+       display: none;
+    }
+ }
