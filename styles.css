@@ -7,7 +7,7 @@ html, body{
 
 /* header and footer base */
 .navbar {
-    padding: 30px;
+    padding: 20px;
     background: #f0ece627;;
     color: rgb(163, 156, 142);
 }
@@ -55,7 +55,7 @@ html, body{
 
 /* content styling */
 .info, #intro, #about, #projects {
-    padding: 25px;
+    padding: 15px;
 }
 
 h3, h4, h5 {
